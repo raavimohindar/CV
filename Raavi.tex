@@ -1,0 +1,140 @@
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\renewcommand{\familydefault}{\sfdefault}          % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75]{geometry}
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+
+\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage[english, german, ngerman]{babel}
+\usepackage{verbatim}
+
+\selectlanguage{english}
+
+\name{Mohindar Rao,}{Raavi}
+\title{Curriculum vitae}
+\address{August-Bebel-Allee 49}{28329 Bremen}{}
+\phone[mobile]{0176\,630\,958\,42}
+\phone[fixed]{0421\,84785652}
+\email{raavi.mohindar.rao@googlemail.com}
+%\photo[64pt][0.4pt]{rainer}
+%\photo[64pt][0.4pt]{Purzel.jpg}
+
+%\quote{Some quote}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+\begin{document}
+
+%\recipient{Hochschule Bremen}{Personalabteilung\\
+%Neustadtswall 30\\
+%28199 Bremen}
+%
+%\date{\today}
+%\opening{
+%\bigskip
+%\textbf{Ihre Stellenanzeige ``LfbA Mathematik / Elektrotechnik'' (FK 4-LfbA-1-16)}\\
+%Sehr geehrte Frau Topp,\newline sehr geehrte Damen und Herren,}
+%\closing{Viele Gr"u"se,}
+%
+%\enclosure[Anlagen]{Lebenslauf, Arbeitszeugnis, Dissertationsurkunde, Diplom, Abiturzeugnis}
+%
+%\makelettertitle
+%
+%ich würde gerne die o.g.\ Aufgabe als Lehrkraft für besondere Aufgaben (``Mathematik / Elektrotechnik'') übernehmen.
+%
+%Ich arbeite zurzeit als Fachexperte für die elektromagnetische Feldsimulation bei Airbus Defence \& Space in Bremen (Abteilung für ``Signatures / Stealth''). Mein Schwerpunkt ist hier die Entwicklung verschiedener mathematischer Rechenverfahren für die Simulation von Radarsignaturen, Antennen und Problemstellungen aus der elektromagnetischen Verträglichkeit sowie dem Blitzschutz.
+%
+%Ich habe an der Universität Bremen Nachrichtentechnik studiert. Das Thema meiner Diplomarbeit ist die Implementierung eines Integralgleichungsverfahrens für die Simulation von Hornantennen gewesen. Während meiner anschließenden Tätigkeit als Wissenschaftlicher Mitarbeiter am selben Institut habe ich verschiedene Integralgleichungsverfahren für Problemstellungen aus der Hochfrequenztechnik entwickelt. 
+%
+%Bei Airbus arbeite ich aktuell an der Entwicklung eines Discontinuous-Galerkin-FEM-Solvers für GPU-Computer und an der Weiterentwicklung von theoretischen Formulierungen für die Gewinnung von Streuzentrenmodellen mit Zeitbereichslösern und optisch-asymptotischen Lösern. Die Stelle ist gut bezahlt und meine fachlichen Aufgaben sind sehr interessant, allerdings wird die ``Standortfrage'' unserer kleinen und etwas überalterten Abteilung abhängig von der Auftragslage regelmäßig neu gestellt. Unbefriedigend sind außerdem durch Rationalisierungszwang getriebene, ständig neue Projekt\-management\--Pro\-ze\-du\-ren. Es ist viel persönliches Engagement erforderlich, wenn man fachlich erfolgreich bleiben möchte.
+%
+%Schon an der Uni Bremen habe ich viele studentische Projekte und Diplomarbeiten betreut. Bei Airbus habe ich erfolgreich eine Diplomarbeit und zwei Dissertationen betreut. Ich verfüge über die von Ihnen geforderten Kompetenzen. Ich könnte zusätzlich Lehraufgaben auf den Gebieten ``Theoretische Elektrotechnik'', ``Numerische Mathematik'', ``Hochfrequenztechnik'', ``Software-Entwicklung'' und ``Signaltheorie''  übernehmen. Sehr gerne würde ich auch entsprechende studentische Forschungsprojekte betreuen.  
+%
+%Ich würde mich über Ihr Interesse freuen; ich stelle mich auch gerne persönlich bei Ihnen vor.
+%
+%\makeletterclosing
+%
+%\clearpage
+
+\makecvtitle
+
+\section{Job Experience}
+
+\cventry{2006 -- now}{Software development using C\# and COM}{Mician GmbH}{Bremen}{}{Develop tools that communicate with an in-house simulation software tool for microwaves components, waveguides and electromagnetic fields to synthesize and analyze an input and show the output\\
+Capabilities:
+\begin{itemize}
+	\item Design software based on Model-View-Controller(MVC)
+	\item Use design patterns in software design
+	\item Use clean code philosophy for writing readable code
+	\item Test software using mocking framework
+\end{itemize}
+Responsibilities:
+\begin{itemize}
+	\item Developed an horn synthesis tool to synthesize and analyze horn antennas
+	\item Designed and implemented a reflector antennas tool and used the horn synthesis tool to design its input
+	\item Established a communication between an unmanaged dll that computes the reflector, to a GUI that display the output using technologies such as P-Invoke and SendMessage
+	\item Programmed a filter tuning tool to analyze waveguide filters in time-domain
+	\item Supported customers by fixing the bugs in their code and wrote code snippets to help customers to communicate with in-house simulation tool
+	\item Wrote user manuals and produced product videos for exhibition
+	\item Supervised an implementation of an optimizer algorithm that was a part of master thesis of a student
+\end{itemize}
+}
+
+\section{School and University}
+
+\cventry{2002 -- 2006}{M.Sc. Communication \& Information Technology}{University of Bremen}{Bremen}{}{Master Thesis: ``Analysis of iterative multi-user detection by information theory''}
+
+\cventry{1997 -- 2001}{Bachelor of Engineering. Electronics and Communication  }{University of Madras}{India}{}{Thesis: ``Serial communication between battery controller and computer''}
+
+\cventry{1985 -- 1997}{School}{S.V.M.Hr.Sec. School, Thiruvallur, Tamil Nadu}{India}{}{}
+
+\section{Languages}
+
+\cvitem{English}{Very fluent}
+\cvitem{German}{Good}
+
+\section{Computer knowledge}
+
+\cvitem{Programming languages}{C\#, C++, Matlab, VBA}
+\cvitem{Testing}{NUnit \& NSubstitute}
+\cvitem{Operating system}{Windows, Linux}
+\cvitem{Development environment}{Visual Studio, Eclipse}
+\section{Computer knowledge}
+\cvitem{Version control}{Git}
+\cvitem{Office tools}{\LaTeX, PowerPoint, Word, Excel}
+
+\section{Special Skills}
+
+\cvitem{}{Scrum, quick meeting with team and solve problems.}
+
+\section{Private Interest}
+
+\cvitem{}{Computational electromagnetics: Integral solvers.
+	\begin{itemize}
+	\item Method of Moments (MoM): Inspired to write code to calculate surface currents and eventually the far-fields for the reflector antennas. As a start, implementing MoM after work at home in C++.
+	\end{itemize}
+}
+
+\section{Hobbies}
+\cvitem{}{Photography. Discovered the beauty of printing negatives in the darkroom, which eventually leads me to built one darkroom at home and spending some good time printing negatives}
+
+\end{document}
